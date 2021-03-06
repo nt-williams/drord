@@ -64,7 +64,7 @@ estimate_ci_logodds <- function(logodds_est, cdf_est, out_form, covar,
 	}else{
 		bca_ci <- NULL
 	}
-	return(list(wald = wald_ci, bca = bca_ci))
+	return(list(wald = wald_ci, bca = bca_ci, cov_est = beta_cov_est))
 }
 
 
